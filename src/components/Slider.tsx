@@ -29,7 +29,7 @@ const ImageSlider = () => {
 
 
   return (
-    <div className=' absolute top-16 right-12 w-9/12'>
+    <div className=' absolute top-12 sm:top-16 sm:right-9 w-full sm:w-9/12'>
     <div className="flex mt-3 w-12/12 items-center justify-center h-12">
       <button 
         onClick={handleLeftClick} 
@@ -45,49 +45,49 @@ const ImageSlider = () => {
           <img 
             src="/assets/flags/us.svg" 
             alt="Sliding" 
-            className=" h-8  rounded-md"
+            className=" h-5 rounded-sm sm:h-8  sm:rounded-md"
             
           />
           <img 
             src="/assets/flags/uk.svg" 
             alt="Sliding" 
-            className=" h-8  rounded-md"
+            className=" h-5 rounded-sm sm:h-8  sm:rounded-md"
             
           />
           <img 
             src="/assets/flags/ch.svg" 
             alt="Sliding" 
-            className=" h-8  rounded-md"
+            className=" h-5 rounded-sm sm:h-8  sm:rounded-md"
             
           />
           <img 
             src="/assets/flags/kr.svg" 
             alt="Sliding" 
-            className=" h-8  rounded-md"
+            className=" h-5 rounded-sm sm:h-8  sm:rounded-md"
             
           />
           <img 
             src="/assets/flags/jp.svg" 
             alt="Sliding" 
-            className=" h-8  rounded-md"
+            className=" h-5 rounded-sm sm:h-8  sm:rounded-md"
             
           />
           <img 
             src="/assets/flags/hk.svg" 
             alt="Sliding" 
-            className=" h-8  rounded-md"
+            className=" h-5 rounded-sm sm:h-8  sm:rounded-md"
             
           />
           <img 
             src="/assets/flags/tr.svg" 
             alt="Sliding" 
-            className=" h-8  rounded-md"
+            className=" h-5 rounded-sm sm:h-8  sm:rounded-md"
             
           />
           <img 
             src="/assets/flags/eu.svg" 
             alt="Sliding" 
-            className=" h-8  rounded-md"
+            className=" h-5 rounded-sm sm:h-8  sm:rounded-md"
             
           />
           

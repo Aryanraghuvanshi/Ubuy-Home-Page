@@ -52,7 +52,7 @@ const Worldstore = () => {
         autoplaySpeed: 3000,
         cssEase: "ease",
         pauseOnHover: false,
-        
+        arrows:false
       };
 
   return (
@@ -66,15 +66,15 @@ const Worldstore = () => {
         </div>
 
 
-        <div className='grid grid-cols-6 gap-4'>
+        <div className='grid sm:grid-cols-6 grid-cols-2 gap-4'>
 
             {imgsrc.map((val ,i)=>(
-                 <div key={i} className='w-56 h-52 bg-white rounded-xl'>
+                 <div key={i} className='w-44  sm:w-56 sm:h-52 bg-white rounded-xl'>
                  <div>
                      <img src={val.src} alt="" className='h-32 w-full rounded-t-xl ' />
                  </div>
                  <div>
-                     <p className='text-gray-700 text-sm font-semibold text-center pt-5'> {val.title}</p>
+                     <p className='text-gray-700 text-sm font-semibold text-center pt-1 sm:pt-5'> {val.title}</p>
                  </div>
              </div>
             ))
@@ -82,23 +82,29 @@ const Worldstore = () => {
 
             <div className='w-[700px]'>
             <Slider {...settings}>
-           <div className='w-[700px] h-52 bg-white rounded-xl'>
-                 <div>
+           <div >
+            <div className='w-[360px] sm:w-[700px] h-52 bg-white rounded-xl'>
+            <div>
                      <img src="https://d2ati23fc66y9j.cloudfront.net/2024/homepage/product-store/korean-beauty.jpg.webp" alt="" className='h-32 w-full rounded-t-xl object-cover' />
                  </div>
                  <div>
                      <p className='px-3 text-sm font-semibold text-center pt-3 text-gray-500'> Say Goodbuy To Dull Skin & Hello To</p>
                  </div>
                  <div><p className=' text-center font-bold'>Korean Beauty</p></div>
+            </div>
             </div> 
-           <div  className='w-[700px] h-52 bg-white rounded-xl'>
+
+
+           <div  >
+            <div className='w-[360px] sm:w-[700px] h-52 bg-white rounded-xl'>
                  <div>
                      <img src="https://d2ati23fc66y9j.cloudfront.net/2024/homepage/product-store/harley.jpg.webp" alt="" className='h-32 w-full rounded-t-xl object-cover' />
                  </div>
                  <div>
                      <p className='px-3 text-sm font-semibold text-center pt-3 text-gray-500'> Gear Up & Join The Ride With <span className='text-black font-bold'>Harley</span></p>
                  </div>
-                 <div><p className=' text-center font-bold'>Davidson</p></div>
+                 <div><p className=' text-center font-bold'>Davidson</p></div></div>
+                
             </div>
             </Slider>
             </div>

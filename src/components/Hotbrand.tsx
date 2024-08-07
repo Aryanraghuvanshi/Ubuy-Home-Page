@@ -19,7 +19,37 @@ const Hotbrand = ({names} : Names) => {
         speed: 200,
         autoplaySpeed: 3000,
         cssEase: "ease",
-        pauseOnHover: false
+        pauseOnHover: false,
+        arrows: false,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                infinite: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                initialSlide: 2,
+                speed:300,
+                
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow:2,
+                slidesToScroll: 1,
+                speed:500,
+                autoplaySpeed: 1500,
+              }
+            }
+          ]
       };
 
   return (
@@ -37,9 +67,9 @@ const Hotbrand = ({names} : Names) => {
         <Slider {...settings}>
            {
             names.map((val,i)=>(
-                <div key={i} className=" cursor-pointer overflow-hidden">
-            <div className="w-52 h-14 rounded-lg flex items-center justify-center bg-white">
-                <h3 className=" font-semibold">{val}</h3>
+                <div key={i} className=" cursor-pointer overflow-hidden ">
+            <div className="sm:w-52 h-14 mr-2 rounded-lg flex items-center justify-center bg-white">
+                <h3 className=" font-semibold text-center">{val}</h3>
             </div>
         </div>
             ))

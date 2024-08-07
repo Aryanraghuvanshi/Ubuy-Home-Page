@@ -17,13 +17,13 @@ const Carousel = ({ images } : Img) => {
   }, [images.length]);
 
   return (
-    <div className=" w-full max-h-screen">
+    <div className="sm:w-full sm:max-h-screen">
       {images.map((image : string, index : number) => (
         <img
           key={index}
           src={image}
           alt={`Slide ${index}`}
-          className={` absolute -z-10 w-full h-full object-cover transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
+          className={` absolute  h-[90%] w-[100vw]  sm:w-full sm:h-full sm:object-cover transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
         />
       ))}
     </div>

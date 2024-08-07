@@ -58,41 +58,76 @@ const Drinks = () => {
         speed: 500,
         autoplaySpeed: 2000,
         cssEase: "ease",
-        pauseOnHover: false
+        pauseOnHover: false,
+        arrows: false,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                initialSlide: 2,
+                speed:300,
+                
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                speed:500,
+                autoplaySpeed: 1500,
+              }
+            }
+          ]
       };
 
   return (
     <section className=' mb-12'>
-    <div className=' px-5'>
+    <div className='px-5'>
         <div className='flex mb-4'>
-        <h2 className=" font-bold text-lg pr-6">
+        <h2 className=" font-bold text-lg pr-4">
           MOST POPULAR ENERGY DRINK BRANDS NOW AVAILABLE IN INDIA
         </h2>
         <span className=" w-[47%] h-0 border-t border-gray-200 relative top-4 right-1"></span> 
         <span className="ml-20"><button className=" bg-yellow-400 px-3 py-1 rounded font-semibold">View All</button></span>
         </div>
 
-        <Slider {...settings}>
+          
+      <Slider {...settings}>
        {data.map((val,i)=>(
-         <div key={i} className='w-[340px] h-[340px] bg-white rounded-xl mr-4 relative'>
+        <div key={i}  >
+         <div  className='w-[173px] sm:w-[186] h-44 md:w-[340px] sm:h-[340px] bg-white rounded-xl mx-auto sm:mx-auto relative'>
          <div className='flex items-center justify-center'>
-             <img src={val.src} alt="" className='pt-8 h-56 w-44 '/>
+             <img src={val.src} alt="" className='pt-8 h-24 w-20 sm:h-56 sm:w-44 '/>
          </div>
          <div>
-             <div className='pl-10 pt-3 flex'>
-                 <img src="/assets/flags/us.svg" alt="" className='w-7 h-7  ' />
+             <div className='pl-4 sm:pl-10 pt-3 flex items-center'>
+                 <img src="/assets/flags/us.svg" alt="" className='w-6 h-6 sm:w-7 sm:h-7  ' />
                  <span className='pl-3 text-xs'>US Store</span>
              </div>
-             <div className='pl-10 pt-2'>
+             <div className='pl-4 sm:pl-10 pt-2 text-xs sm:text-lg'>
                  <h6 >{val.text}</h6>
              </div>
          </div>
-         <div className='absolute bottom-2 right-4'> <img src="/assets/express.png" alt="delivery" className='w-10 h-10' /></div>
+         <div className='absolute bottom-1 right-2 sm:bottom-2 sm:right-4'> <img src="/assets/express.png" alt="delivery" className='w-6 h-6 sm:w-10 sm:h-10' /></div>
+     </div>
      </div>
        ))
        }
        
        </Slider>
+        
+  
        
     </div>
   </section>

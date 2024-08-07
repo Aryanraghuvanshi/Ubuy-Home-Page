@@ -26,7 +26,7 @@ const Dropdown  = ({list} : List ) => {
           onClick={toggleDropdown}
          
         >
-          Explore
+          <span className='hidden sm:inline'>Explore</span>
           <svg
             className="-mr-1 ml-2 h-5 w-5"
             xmlns="http://www.w3.org/2000/svg"

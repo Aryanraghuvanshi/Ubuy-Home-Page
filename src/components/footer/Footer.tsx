@@ -4,12 +4,12 @@ const Footer = () => {
   return (
     <footer className=" bg-white pt-10">
       <div className='px-5'>
-        <div className='mb-5 flex gap-3'>
+        <div className='mb-5 grid grid-cols-2 gap-2 sm:flex sm:gap-3'>
 
 
           <div className='mr-2'>
             <h4 className='font-extrabold text-gray-600 pb-4'>QUICK LINKS</h4>
-            <div className='w-52 border-t border-gray-300 '></div>
+            <div className='sm:w-52 border-t border-gray-300 '></div>
             <div className='pt-6'>
                 <ul>
                   <li className='font-semibold text-sm pb-3 text-gray-600'>About Us</li>
@@ -28,7 +28,7 @@ const Footer = () => {
 
           <div className='mr-2'>
             <h4 className='font-extrabold text-gray-600 pb-4'>UBUY</h4>
-            <div className='w-52 border-t border-gray-300 '></div>
+            <div className='sm:w-52 border-t border-gray-300 '></div>
             <div className='pt-6'>
                 <ul>
                   <li className='font-semibold text-sm pb-3 text-gray-600'>Download App</li>
@@ -48,7 +48,7 @@ const Footer = () => {
 
           <div className='mr-2'>
             <h4 className='font-extrabold text-gray-600 pb-4'>PAYMENT</h4>
-            <div className='w-52 border-t border-gray-300 '></div>
+            <div className='sm:w-52 border-t border-gray-300 '></div>
             <div className='pt-6'>
                 <ul>
                 <li className='mb-5 font-semibold text-gray-600'><img src="https://cdn.pixabay.com/photo/2018/05/08/21/29/paypal-3384015_1280.png" alt="" className='w-10 h-7 object-contain inline-block border border-gray-700 rounded-sm mr-4' /><a href="">Paypal</a></li>
@@ -64,7 +64,7 @@ const Footer = () => {
 
           <div className='mr-2'>
             <h4 className='font-extrabold text-gray-600 pb-4'>SHIPPING</h4>
-            <div className='w-52 border-t border-gray-300 '></div>
+            <div className='sm:w-52 border-t border-gray-300 '></div>
             <div className='pt-6'>
                 <ul>
                   <li className='font-semibold text-sm pb-3 text-gray-600'><h3>Express Shipping</h3>
@@ -80,7 +80,7 @@ const Footer = () => {
 
           <div className='mr-2'>
             <h4 className='font-extrabold text-gray-600 pb-4'>CITIES COVERED</h4>
-            <div className='w-52 border-t border-gray-300 '></div>
+            <div className='sm:w-52 border-t border-gray-300 '></div>
             <div className='pt-6'>
                 <ul>
                   <li className='font-semibold text-sm pb-3 text-gray-600'>Mumbai</li>
@@ -99,7 +99,7 @@ const Footer = () => {
 
           <div className='mr-2'>
             <h4 className='font-extrabold text-gray-600 pb-4'>24/7 Support</h4>
-            <div className='w-52 border-t border-gray-300 '></div>
+            <div className='sm:w-52 border-t border-gray-300 '></div>
             <div className='pt-6'>
                 <ul>
                   <li className='font-semibold text-sm pb-3 text-gray-600'>
@@ -141,85 +141,3 @@ const Footer = () => {
 
 export default Footer
 
-
-{/* <div>
-        <ul>
-            <h3><i class="material-icons" style="font-size:30px;color:rgb(237, 215, 105)"> location_searching</i>QUICK LINKS</h3>
-            <li><a href="">About US</a></li>
-            <li> <a href="">Contact Us</a></li>
-            <li> <a href=""> Corporate Enquiries</a></li>
-            <li> <a href=""> Intellectual Property</a></li>
-            <li> <a href=""> Sitemap</a></li>
-            <li> <a href=""> Track Order</a></li>
-            <li> <a href=""> Customs tariffs and fees</a></li>
-            <li><a href="">Shipping Policy</a></li>
-            <li><a href="">Micro Influencer</a></li>
-             
-            
-        </ul>
-    </div> */}
-
- {/* <div class="first"> 
-        <ul>
-            <h3><i class="material-icons" style="font-size:30px;color:rgb(237, 215, 105)"> inbox </i> UBUY</h3>
-            <li><a href=""> Download App</a></li>
-            <li> <a href=""> Brands List</a></li>
-            <li> <a href=""> Customer Reviews</a></li>
-            <li> <a href=""> Return Policy</a></li>
-            <li> <a href="">  Careers</a></li>
-            <li> <a href=""> Blog</a></li>
-            <li> <a href="">  FAQ</a></li>
-            <li><a href=""> About Ucredit</a></li>
-            <li><a href=""> Ubuy Affiliates</a></li>
-             
-            
-        </ul>
-    </div>
-
-    <div class="first"> 
-        <ul>
-            <h3><i class="material-icons" style="font-size:30px;color:rgb(237, 215, 105)"> payment</i>PAYMENT</h3>
-            <li><img src="https://cdn.pixabay.com/photo/2018/05/08/21/29/paypal-3384015_1280.png" alt=""/><a href="">Paypal</a></li>
-            <li><img src="https://static-00.iconduck.com/assets.00/visa-icon-1024x656-u9fqgerf.png" alt=""/> <a href=""> Visa</a></li>
-            <li><img src="https://imageio.forbes.com/blogs-images/steveolenski/files/2016/07/Mastercard_new_logo-1200x865.jpg?height=512&width=711&fit=bounds" alt=""/> <a href=""> Mastercard</a></li>
-            <li><img src="https://seeklogo.com/images/A/american-express-card-logo-A87C68BD4D-seeklogo.com.png" alt=""/> <a href="">  American Express</a></li>
-            <li><img src="https://zeevector.com/wp-content/uploads/2021/03/Rupay-Logo-PNG.png" alt=""/> <a href="">RuPay</a></li>
-            <li><img src="https://www.creativefabrica.com/wp-content/uploads/2019/01/Internet-banking-icon-by-back1design1-580x367.png" alt=""/> <a href=""> Net Banking</a></li>
-           </ul>
-    </div>
-
-    <div className="first">
-        <ul>
-            <h3><i class="material-icons" style="font-size:30px;color:rgb(237, 215, 105)">  local_shipping</i>  SHIPPING</h3>
-            <li><a href=""> <b></b> Express Shipping</b> <br>Fast Delivery</a></li>
-            <li> <a href="">Standard Shipping<br> 10+ Business Days</a></li>
-           
-            
-        </ul>
-    </div>
-
-    <div class="first">
-        <ul>
-            <h3><i class="material-icons" style="font-size:30px;color:rgb(237, 215, 105)"> edit_location</i> CITIES COVERED</h3>
-            <li><a href="">   Mumbai </a></li>
-            <li> <a href="">  Delhi</a></li>
-            <li> <a href="">  Bangalore</a></li>
-            <li> <a href="">    Hyderabad</a></li>
-            <li> <a href=""> Ahmedabad</a></li>
-            <li> <a href="">    Chennai</a></li>
-            <li> <a href="">     Kolkata</a></li>
-            <li> <a href="">    Surat</a></li>
-           </ul>
-    </div>
-
-    <div class="first">
-        <ul>
-            <h3><i class="material-icons" style="font-size:30px;color:rgb(237, 215, 105)">headset_mic</i> 24/7 Support</h3>
-            <h4><i class="material-icons" style="font-size:30px;color:rgb(237, 215, 105)"> call </i>24/7 Customer <br>Support</h4>
-            <p>Get your <br> texts/emails <br> answered in your <br> native language</p>
-            <br>
-            <h4><b>Customer Services <br>(+91) 7901655023</b></h4>
-           </ul>
-    </div>
-    
-  </footer> */}

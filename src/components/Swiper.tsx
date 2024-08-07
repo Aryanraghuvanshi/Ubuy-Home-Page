@@ -28,7 +28,37 @@ const swiper = ({ data } : Dta ) => {
     speed: 500,
     autoplaySpeed: 3000,
     cssEase: "ease",
-    pauseOnHover: false
+    pauseOnHover: false,
+    arrows:false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          speed:300,
+          
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed:1000,
+          autoplaySpeed: 5000,
+        }
+      }
+    ]
   };
 
   const [position, setPosition] = useState(0);
@@ -47,10 +77,10 @@ const swiper = ({ data } : Dta ) => {
       <section className=" pb-8 overflow-hidden">
         <div className=" px-5">
           <div className=" flex  mb-4">
-            <h1 className=" font-bold text-lg pr-6">
+            <h1 className=" font-bold text-sm sm:text-lg pr-6">
               INTERNATIONAL ONLINE SHOPPING MADE EASY AT UBUY INDIA
             </h1>
-            <span className=" w-7/12 h-0 border-t border-gray-200 relative top-4 right-1"></span>
+            <span className="hidden sm:w-7/12 sm:h-0 sm:border-t sm:border-gray-200 sm:relative sm:top-4 sm:right-1"></span>
           </div>
           {/* <div className=" flex gap-3 transform transition-transform duration-300"
           style={{ transform: `translateX(-${position * 10}px)` }}  > */}
@@ -58,9 +88,9 @@ const swiper = ({ data } : Dta ) => {
          <Slider {...settings}>
             {data.map((val :objarr , i : number ) => (
               
-              <div className=" cursor-pointer  overflow-hidden" key={i}>
-              <div className=" px-3 w-60 h-24 rounded-lg bg-white">
-                <h2 className=" pb-4 font-semibold">{val.title}</h2>
+              <div className=" cursor-pointer  overflow-hidden " key={i}>
+              <div className="mx-auto sm:mx-0 px-3 sm:px-3 w-80 sm:w-56 h-24 rounded-lg bg-white">
+                <h2 className=" text-nowrap pb-4 font-semibold">{val.title}</h2>
                 <figure className=" flex justify-between">
                   <button className=" opacity-65">{">"}</button>
                   <img

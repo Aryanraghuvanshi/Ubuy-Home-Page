@@ -101,7 +101,7 @@ const Products = () => {
      <Topcategory brands={brands} />
      <Worldstore />
      
-     <div className="grid grid-cols-2 mt-7 mb-3">
+     <div className="grid grid-cols-1 sm:grid-cols-2 mt-7 mb-3">
      <Merch  data={data1}/>
      <Merch1 data={Xtent} />
      </div>

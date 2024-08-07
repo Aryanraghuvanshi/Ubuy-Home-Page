@@ -4,9 +4,9 @@ import Blender from '../assets/luxury/blender.png'
 const card = () => {
     return(
         <>
-        <div className=' w-56 h-28 flex flex-col items-center justify-center gap-3 rounded-xl border bg-white'>
-                <img src="/assets/luxury/blender.png" alt="random" className=' w-15 h-12' />
-                <h3 className=' text-sm font-semibold'>Blenders & Mixers</h3>
+        <div className=' sm:w-56 sm:h-28 flex flex-col items-center justify-center gap-3 rounded-xl border bg-white'>
+                <img src="/assets/luxury/blender.png" alt="random" className='w-10  pt-2 sm:pt-0 sm:w-15 sm:h-12' />
+                <h3 className=' text-center text-sm font-semibold'>Blenders & Mixers</h3>
                </div>
         </>
     )
@@ -22,7 +22,7 @@ const Luxury = () => {
               EXPLORE PREMIUM & LUXURY BRANDS & PRODUCTS FROM THE OVERSEAS MARKET IN INDIA
             </h2>
             </div>
-            <div className='flex flex-wrap gap-5 justify-center' >
+            <div className=' grid grid-cols-3 gap-2 sm:flex sm:flex-wrap sm:gap-5 justify-center' >
                {card()}
                {card()}
                {card()}

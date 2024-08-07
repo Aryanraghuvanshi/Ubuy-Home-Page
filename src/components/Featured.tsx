@@ -26,6 +26,36 @@ const Featured = () => {
     autoplaySpeed: 3000,
     cssEase: "ease",
     pauseOnHover: false,
+    arrows:false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          speed:300,
+          
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow:2,
+          slidesToScroll: 1,
+          speed:500,
+          autoplaySpeed: 1500,
+        }
+      }
+    ]
   };
 
   return (
@@ -38,12 +68,14 @@ const Featured = () => {
 
         <Slider {...settings}>
           {names.map((val, i) => (
-            <div
-              key={i}
-              className="w-[270px] h-28 flex justify-center items-center bg-white rounded-xl"
+            <div key={i}>
+              <div
+              className="  sm:w-[270px] sm:h-28 mr-1 flex justify-center items-center bg-white rounded-xl"
             >
-              <img src={val} alt="" className="w-72 h-20 mt-4 object-cover" />
+              <img src={val} alt="" className="w-40 h-20 object-contain sm:w-72 sm:h-20 sm:mt-4 sm:object-cover" />
             </div>
+            </div>
+            
           ))}
         </Slider>
       </div>

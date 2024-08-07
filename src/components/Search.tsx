@@ -20,16 +20,16 @@ const Search = ({ data }: Data) => {
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col bg-w items-center">
       <input
         type="text"
-        className="w-11/12 border-b border-gray-300 py-4 relative top-2 text-black text-left  outline-none "
+        className="w-11/12 border-b border-gray-300 rounded px-1 py-4 relative top-2 text-black text-left  outline-none "
         placeholder="Search our global search engine for products,categories"
         value={query}
         onChange={handleSearch}
       />
-        <div className=' absolute right-6 top-6'>
-         <button> <img src="/assets/search.png" alt="search" className=' opacity-50 w-6 h-6' /> </button> 
+        <div className=' absolute top-6 right-1 sm:right-6 sm:top-6'>
+         <button> <img src="/assets/search.png" alt="search" className=' opacity-50 w-5 h-5 sm:inline sm:w-6 sm:h-6' /> </button> 
         </div>
       <ul className="w-full md:w-1/2 mt-4">
         {filteredData.map((item, index) => (

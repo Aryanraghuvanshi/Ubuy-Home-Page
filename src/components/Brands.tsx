@@ -34,7 +34,7 @@ const Brands = () => {
               THE TOP BRANDS OF TOMORROW
             </h2>
             </div>
-            <div className='mb-10 h-80'>
+            <div className='mb-10 h-52 sm:h-full'>
                 < Carousel images = {images} />
             </div>
         </div>

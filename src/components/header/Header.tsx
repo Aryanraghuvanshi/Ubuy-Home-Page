@@ -3,7 +3,7 @@ import Carousel from "@/components/Carousel";
 import Banner from "@/components/Banner";
 import Search from "@/components/Search";
 import Slider from "@/components/Slider";
-import Card from "@/components/Card";
+import Card,{Card2} from "@/components/Card";
 
 const images = [
   "https://d2ati23fc66y9j.cloudfront.net/ubuydeals-v2/banner-171636231812.jpg.webp?v=1.0",
@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <header >
       <div>
-        <div className=" max-h-screen ">
+        <div className=" sm:max-h-screen ">
           <Carousel images={images} />
         </div>
         <div className="h-full w-full p-0 pt-32">
@@ -35,10 +35,10 @@ const Header = () => {
         </div>
       </div>
 
-      <div className=" relative top-80 left-1/4 border border-gray-300 bg-gray-50 w-1/2 h-36 rounded-3xl">
+      <div className=" relative top-80 left-[5%] sm:left-1/4 border border-gray-300 bg-white sm:bg-gray-50 w-[90%] h-28 sm:w-1/2 sm:h-36 rounded-3xl">
         <Search data={data} />
         <div className=" mt-3">
-          <h3 className=" pl-10 pt-4  text-lg inline">Order From</h3>
+          <h3 className=" text-sx hidden  sm:pl-10 sm:pt-4  sm:text-lg sm:inline">Order From</h3>
           <Slider />
         </div>
       </div>
@@ -47,16 +47,27 @@ const Header = () => {
         <img
           src="https://d2ati23fc66y9j.cloudfront.net/d2c_2024/d2c_banner_web_eng.gif"
           alt="image"
-          className=" object-cover"
+          className=" object-cover h-14 sm:h-full sm:w-full"
         />
       </div>
 
       <div className="mt-96"></div>
-      <section className=" bg-white mb-10">
+      <section className=" sm:block hidden sm:bg-white mb-10">
         <div className=" py-7">
           <div className=" px-7">
             <div className="flex justify-between">
             <Card />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section className=" block sm:hidden sm:bg-white mb-10">
+        <div className="pt-1 sm:py-7">
+          <div className=" px-1">
+            <div className="flex justify-between">
+            <Card2 />
             </div>
           </div>
         </div>

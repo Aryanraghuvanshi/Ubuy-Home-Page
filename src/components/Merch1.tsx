@@ -25,9 +25,9 @@ const Merch = ({data} : any) => {
           </span>
         </div>
 
-        <div className=" grid grid-cols-3  ">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-1 sm:gap-0  ">
             {data.map((val :{src:string , text:string},i :number)=>(
-                <div key={i} className="w-56 h-24 rounded-xl flex bg-white mb-2">
+                <div key={i} className=" sm:w-56 h-24 rounded-xl flex shadow-lg bg-white mb-2">
             <div className=" inline-block w-24  rounded-l-xl">
               <img
                 src={val.src}

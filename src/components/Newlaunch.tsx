@@ -46,35 +46,35 @@ const Newlaunch = () => {
 
       
 
-      <div className="mt-5 grid grid-cols-4 gap-4"> 
+      <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-1 sm:gap-4"> 
           {data.map((val,i)=>(
-                   <div key={i} className="w-[360px] h-[350px] bg-white rounded-xl mr-4 relative">
+                   <div key={i} className="w-[172px] h-[200px] sm:w-[360px] sm:h-[350px] overflow-hidden bg-white rounded-xl mr-2 sm:mr-4 relative">
                    <div className="absolute top-4 left-4">
                        
                        <img
                          src="/assets/tag.png"
                          alt="delivery"
-                         className="w-7 h-7"
+                         className="w-5 h-5 sm:w-7 sm:h-7"
                        />
                      </div>
                      <div className="flex items-center justify-center">
                        <img
                          src={val.src}
                          alt=""
-                         className="pt-8 h-56 w-40 "
+                         className="pt-1 h-20 object-contain sm:pt-8 sm:h-56 sm:w-44 "
                        />
                      </div>
                      <div>
-                       <div className="pl-10 pt-3 flex">
+                       <div className="pl-3 sm:pl-10 pt-3 flex items-center">
                          <img
                            src="/assets/flags/us.svg"
                            alt=""
-                           className="w-7 h-7  "
+                           className="w-6 h-6 sm:w-7 sm:h-7  "
                          />
                          <span className="pl-3 text-xs">US Store</span>
                        </div>
-                       <div className="pl-10 pt-2 ">
-                         <h6 className="text-sm ">
+                       <div className="pl-3 sm:pl-10 pt-2 ">
+                         <h6 className="text-xs sm:text-sm ">
                            {val.text}
                          </h6>
                        </div>
@@ -84,7 +84,7 @@ const Newlaunch = () => {
                        <img
                          src="/assets/express.png"
                          alt="delivery"
-                         className="w-10 h-10"
+                         className="w-6 h-6 sm:w-10 sm:h-10"
                        />
                      </div>
                    </div>
